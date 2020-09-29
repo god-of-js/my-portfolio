@@ -115,7 +115,7 @@ nav{
 }
 .trans_btn:hover{
        img{
-           width: 20px
+           width: 20px;
        }
 }
 .font_sm{
@@ -166,4 +166,30 @@ nav{
     .text{
         font-size: 0.9em;
     }
+}
+.trail {
+    padding-right: 50px;
+    .circle{ 
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        // background-color: #ffffff;
+        height: 10px;
+        width: 10px;
+    }
+    .line {
+        .child{
+            height: 100px;
+            width: 2px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
+.text-overflow{ 
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
 }
