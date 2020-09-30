@@ -9,7 +9,7 @@
         class="link"
         target="_blank"
         href="https://docs.google.com/document/d/1ITVyudR-U-TqnbRvzCYIiUBkUrnEp_FAKnzyMMSWE2Y/edit?usp=sharing"
-        >Resume
+        >Résumé
       </a>
     </div>
     <button class="trans_btn mdi mdi-menu " @click="activate" style="display: none;"> </button>

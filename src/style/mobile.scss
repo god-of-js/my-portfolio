@@ -45,6 +45,10 @@ $grey: #f4f4f4;
     }
 }
 @media only screen and (max-width: 545px ) {
+    .services{
+        width: 80%;
+        margin: auto;
+    }
     .landing_page{
         flex-direction: column;
         padding-top: 100px;

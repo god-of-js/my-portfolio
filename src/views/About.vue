@@ -3,7 +3,7 @@
     <section class="d-flex landing_page align-items-center">
       <img src="/img/formalhenry.jpg" width="300" />
       <div class="text_container">
-        <div class="header pb-5">
+        <div class="header pb-3">
           Henry Eze
         </div>
         <div class="col-lg-8 col-md-12 p-0">
@@ -23,7 +23,7 @@
       </div>
     </section>
     <section class="pl-5 pr-5 pt-0 pb-5 no_padding">
-      <div class="title pl-5 ml-3 no_padding">Interests</div>
+      <div class="title pl-5 ml-3 no_padding text-center pb-3">Interests</div>
       <div class="row d-flex justify-content-center p-3 no_padding">
         <interest
           v-for="interest in interests"
@@ -33,7 +33,7 @@
       </div>
     </section>
     <section class="pl-5 pr-5 pt-0 no_padding">
-      <div class="title pl-5 ml-3 no_padding">Services</div>
+      <div class="title pl-5 ml-3 no_padding text-center pb-3">Services</div>
       <div class="row d-flex justify-content-center p-3 no_padding">
         <services
           v-for="(service, index) in services"
