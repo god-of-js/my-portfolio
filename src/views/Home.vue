@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="d-flex landing_page align-items-center">
-      <img src="/img/henrysmile.jpeg" width="300" class="img"/>
+      <img src="/img/henrysmile.jpeg" width="300" class="img" alt="a picture of Eze Henry(godofjs) smiling"/>
       <div class="text_container">
         <div class="header pb-4">
           Hey,<br />
@@ -42,25 +42,12 @@
       <div>
         <postt v-for="(project, index) in projects" :key="index" :type="'project'" :name="project.name" :text="project.text" :languages="project.language" :link="project.link"/>
       </div>
-      <!-- <div class="p-4 d-flex justify-content-center no_padding">
-        <post 
-        v-for="(project, index) in projects" 
-        :key="index" 
-        :name="project.name" 
-        :img="project.img"
-        :link="project.link" />
-      </div> -->
     </section>
     <section class="pl-5 pt-5 pr-5 pb-2 no_padding">
       <div class="title text-center pb-5" >Blog</div>
       <div class="">
         <postt v-for="(project, index) in blog" :type="'blog'" :key="index" :name="project.name" :text="project.text" :languages="project.language" :link="project.link"/>
-        <!-- <post 
-        v-for="(post, index) in blog" 
-        :key="index" 
-        :name="post.name" 
-        :img="post.img"
-        :link="post.link" /> -->
+      
       </div>
     </section>
   </div>

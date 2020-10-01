@@ -1,11 +1,12 @@
 <template>
   <div class="home p-5 no_padding">
     <section class="d-flex landing_page align-items-center">
-      <img src="/img/formalhenry.jpg" width="300" />
+      <img src="/img/formalhenry.jpg" width="300" alt="a picture of Eze Henry(godofjs) smiling" />
       <div class="text_container">
         <div class="header pb-3">
           Henry Eze
-        </div>
+        </div> 
+        <!-- Eze Hennry, Godofjs, js, vue developer, Vue, node, webpack, -->
         <div class="col-lg-8 col-md-12 p-0">
           Hello! I'm Eze Henry an innovative and well versed developer with over
           two years active professional experience. I started as a front end web
