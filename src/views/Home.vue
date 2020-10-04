@@ -8,8 +8,7 @@
           I am Henry
         </div>
         <div class="col-lg-8 col-sm-12 p-0 text_sm">
-          I build Enterprise full stack applications, and of course I am a
-          technical writer.
+          I am a developer who utilizes JavaScript, python, java and many other technologies in my day to day jobs. I am also a technical writer..
         </div>
         <div class="pt-5 font_sm">
           You can reach me via my social media handles:
@@ -53,7 +52,7 @@
   </div>
 </template>
 <script>
-import postt from "../components/post2.vue"
+import postt from "../components/post2.vue";
 export default {
   name: "Home",
   components: {

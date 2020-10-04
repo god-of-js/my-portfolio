@@ -1,89 +1,119 @@
 $grey: #f4f4f4;
-@media only screen and (max-width: 950px ) {
-    .landing_page{
+
+@media only screen and (max-width: 950px) {
+    .landing_page {
         padding-left: 50px;
     }
-    .no_padding{
+    .no_padding {
         padding-left: 0px !important;
         padding-right: 0px !important;
         padding-top: 20px !important;
         overflow-x: hidden !important
     }
 }
-@media only screen and (max-width: 769px ) {
-    .nav_links{
+@media only screen and (max-width: 769px) {
+    .nav_links {
         width: 50%;
     }
-    .landing_page{
+
+    .landing_page {
         padding-left: 30px;
     }
 }
-@media only screen and (max-width: 728px ) {
-    .landing_page{
+
+@media only screen and (max-width: 728px) {
+    .landing_page {
         padding-left: 30px;
-        img{
+
+        img {
             width: 200px;
         }
-        .text_container{
+
+        .text_container {
             padding-left: 30px;
-            .header{
+
+            .header {
                 padding-bottom: 20px !important;
             }
         }
     }
 }
-@media only screen and (max-width: 728px ) {
-    .nav_links{
+
+@media only screen and (max-width: 728px) {
+    .nav_links {
         width: 70%;
     }
-    nav{
+
+    nav {
         padding-left: 0px !important;
     }
-    .name_padding{
+
+    .name_padding {
         padding-left: 5px !important;
         margin-left: 0px !important;
     }
 }
-@media only screen and (max-width: 545px ) {
-    .services{
+
+@media only screen and (max-width: 545px) {
+    .trail {
+        padding: 0px !important;
+
+    }
+
+    .description {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .services {
         width: 80%;
         margin: auto;
     }
-    .landing_page{
+
+    .landing_page {
         flex-direction: column;
         padding-top: 100px;
         padding-left: 0px !important;
-        .header{
+
+        .header {
             text-align: center;
             padding-top: 19px;
             font-size: 29px !important;
-            br{
+
+            br {
                 display: none;
             }
         }
-        .text_container{
+
+        .text_container {
             text-align: center;
             padding-left: 0px !important;
         }
-        .socials{
+
+        .socials {
             justify-content: center;
         }
-        .text_sm{
+
+        .text_sm {
             font-size: 0.9em;
         }
     }
 }
-@media only screen and (max-width: 446px ) {
-    .nav_links{
+
+@media only screen and (max-width: 446px) {
+    .nav_links {
         display: none !important;
     }
-    .mdi-menu{
+
+    .mdi-menu {
         display: block !important;
     }
-    .interest{
+
+    .interest {
         min-width: 90%;
     }
-    .link{
+
+    .link {
         width: 100%;
         border: 1px solid $grey;
         margin-top: 10px;
@@ -91,25 +121,31 @@ $grey: #f4f4f4;
         padding: 10px;
     }
 }
-@media only screen and (max-width: 375px ) {
-   .post{
-       width: 300px;
-   }
+
+@media only screen and (max-width: 375px) {
+    .post {
+        width: 300px;
+    }
 }
-@media only screen and (max-width: 347px ) {
-    .landing_page{
-        padding-left: 30px; 
-        img{
+
+@media only screen and (max-width: 347px) {
+    .landing_page {
+        padding-left: 30px;
+
+        img {
             width: 200px;
         }
-        .text_container{
+
+        .text_container {
             padding-left: 30px;
-            .header{
+
+            .header {
                 padding-bottom: 20px !important;
             }
         }
     }
-    .interest{
+
+    .interest {
         width: 60%;
     }
 }
