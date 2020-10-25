@@ -79,7 +79,7 @@
         <div class="pt-3">
           During my years of active development, I have worked on projects in
           sectors like health, vendor management, real estate, logistics,
-          foreing exchange e.t.c.
+          foreign exchange e.t.c.
         </div>
       </section>
       <section class=" mt-3">
