@@ -1,27 +1,29 @@
 <template>
-  <nav class="d-flex p-2 align-items-center justify-content-between pl-5">
-    <name class="ml-5 name_padding" />
-    <div class="col-lg-3 col-md-6  d-flex justify-content-between nav_links">
-      <router-link to="/" class="link">Home</router-link>
-      <router-link to="/about" class="link">About</router-link>
-      <a href="mailto:henryeze019@gmail.com" class="link">Contact</a>
+  <nav class="d-flex p-2 align-items-center justify-content-between pl-5 col-lg-4">
+    <b> Godofjs </b>
+    <div class="  d-flex justify-content-between align-center">
+      <a href="mailto:henryeze019@gmail.com" class="link active__bg">Contact</a>
       <a
-        class="link"
+        class="link active__bg"
         target="_blank"
         href="https://docs.google.com/document/d/1ITVyudR-U-TqnbRvzCYIiUBkUrnEp_FAKnzyMMSWE2Y/edit?usp=sharing"
         >Résumé
       </a>
     </div>
-    <button class="trans_btn mdi mdi-menu " @click="activate" style="display: none;"> </button>
+    <button
+      class="trans_btn mdi mdi-menu "
+      @click="activate"
+      style="display: none;"
+    ></button>
   </nav>
 </template>
 <script>
-import {EventBus} from '../helpers/eventbus.js'
+import { EventBus } from "../helpers/eventbus.js";
 export default {
   methods: {
     activate() {
-      EventBus.$emit('sidebar', true)
-    }
-  }
-}
+      EventBus.$emit("sidebar", true);
+    },
+  },
+};
 </script>

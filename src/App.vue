@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
+  <div id="app" :class="[dark === true ? 'dark__mode' : 'light__mode', ' body ']">
     <side v-if="sidebar === true" />
-    <navbar />
+    <div class="d-flex align-items-center pt-4">
+      <navbar class=""/>
+      <div class="ml-3">
+      <button class="mdi mdi-weather-night mode__btn active__bg" v-if="dark == false" @click="dark = true"> </button>
+      <button class="mdi mdi-weather-sunny mode__btn active__bg" v-else @click="dark = false"></button>
+      </div>
+    </div>
+
     <router-view />
   </div>
 </template>
 <script>
 import navbar from "./components/nav.vue";
 import side from "./components/sidebar.vue";
-import {EventBus} from './helpers/eventbus.js'
+import { EventBus } from "./helpers/eventbus.js";
 export default {
   data: () => {
     return {
-      sidebar: false
-    }
+      sidebar: false,
+      dark: false,
+    };
   },
   components: {
     navbar,
-    side
+    side,
   },
   mounted() {
-    EventBus.$on('sidebar', (value) => {
-      this.sidebar = value
-    })
+    EventBus.$on("sidebar", (value) => {
+      this.sidebar = value;
+    });
   },
 };
 </script>
@@ -38,7 +46,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0px;
-  color: #2c3e50;
   margin: -0px !important;
 }
 body {

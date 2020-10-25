@@ -2,12 +2,11 @@
   <div class="post m-2 p-0 pl-0">
     <div
       class="image d-flex justify-content-center align-items-center"
-      :style="`background-image: url(${img})`"
     ></div>
     <div
       class="p-2 border name d-flex justify-content-between align-items-center"
     >
-      <div class="overflow">{{name}}</div>
+      <div class="overflow">{{name}}pppp</div>
       <a :href="link" target="_blank"> 
         <button class="trans_btn p-1">
           <img src="/img/external-link.png" width="15" />

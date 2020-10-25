@@ -1,40 +1,64 @@
 <template>
-  <div class="d-flex">
-    <div class="trail d-flex flex-column align-items-center ">
-      <div class="line">
-        <div class="child" style="height: 80px;"></div>
-        <div class="child" style="height: 8px;"></div>
-        <div class="child" style="height: 5px;"></div>
-        <div class="child" style="height: 3px;"></div>
-      </div>
-      <div class="circle"></div>
-      <div class="line">
-        <div class="child" style="height: 3px;"></div>
-        <div class="child" style="height: 5px;"></div>
-        <div class="child" style="height: 8px;"></div>
-        <div class="child" style="height: 80px;"></div>
-      </div>
-    </div>
+  <div class="d-flex post__box border m-3 p-3 col-lg-5 col-md-6 col-sm-12">
     <div class="description">
-        <div > <a :href="link" target="_blank" class="name" style="font-size: 1.5em; color: #000000;"> {{name}}
-          
-        <button class="trans_btn p-1">
-          <img src="/img/external-link.png" width="15" />
-        </button>
-        </a></div>
-        <div class="languages" style="font-size: 0.8em; font-weight: bold;">{{languages}}</div>
-        <span class="pt-3 text-overflow" style="font-size: 1em">{{text}}</span> <a :href="link" target="_blank" v-if="type === 'blog'">read more...</a>
+      <div
+          :href="link"
+          target="_blank"
+          class="name font__color"
+          style="font-size: 1.2em;"
+        >
+          {{ name }}
+      </div>
+      <div class="languages pt-2 pl-0" style="font-size: 0.8em;">
+        <a
+          :href="link"
+          v-if="link"
+          target="_blank"
+          class="name font__color"
+          style="font-size: 0.9em;"
+        >
+          APPLICATION
+
+        </a>
+        <a
+          :href="repo"
+          v-if="repo"
+          target="_blank"
+          class="name font__color"
+          style="font-size: 0.9em;"
+        >
+          GIT REPO
+
+        </a>
+        <a
+        v-if="blog"
+          :href="blog"
+          target="_blank"
+          class="name font__color"
+          style="font-size: 0.9em;"
+        >
+          BLOG POST
+
+        </a>
+      </div>
+      <div class="languages mt-2" style="font-size: 0.8em;">
+        {{ languages }}
+      </div>
+      <span class="pt-3 text-overflow" style="font-size: 1em">{{ text }}</span>
+      <a :href="link" target="_blank" v-if="type === 'blog'">read more...</a>
     </div>
   </div>
 </template>
 <script>
 export default {
-    props: {
-        name: String,
-        languages: String,
-        text: String,
-        type: String,
-        link: String
-    }
-}
+  props: {
+    name: String,
+    languages: String,
+    text: String,
+    type: String,
+    link: String,
+    blog: String,
+    repo: String
+  },
+};
 </script>
