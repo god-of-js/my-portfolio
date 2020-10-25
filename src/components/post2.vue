@@ -56,9 +56,9 @@ export default {
     languages: String,
     text: String,
     type: String,
-    link: String,
-    blog: String,
-    repo: String
+    link: [String, Boolean],
+    blog: [String, Boolean],
+    repo: [String, Boolean]
   },
 };
 </script>

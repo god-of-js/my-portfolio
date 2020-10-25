@@ -17,6 +17,15 @@ $light__hover: #e8e8e8;
   .font__color {
     color: $black;
   }
+  
+.sidebar{
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 100vh;
+    background-color: $grey;
+    color: $black;
+}
 }
 .trans_btn {
   background-color: transparent;
@@ -29,6 +38,15 @@ $light__hover: #e8e8e8;
   .border{
       border: 1px solid $grey;
   }
+   
+.sidebar{
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 100vh;
+    background-color: $black;
+    color: $grey;
+}
   .active__bg:hover {
     background-color: #1b2a38;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home pb-5">
     <section
       class="first-layer d-flex flex-column justify-content-center align-items-center"
     >
@@ -94,33 +94,31 @@
       <section class=" mt-3">
         <div class="hello-world pb-2">Projects</div>
         <div class="pt-3 row">
-          
-        <postt
-          v-for="(project, index) in projects"
-          :key="index"
-          :type="'project'"
-          :name="project.name"
-          :repo="project.repo"
-          :text="project.text"
-          :languages="project.language"
-          :link="project.link"
-        />
+          <postt
+            v-for="(project, index) in projects"
+            :key="index"
+            :type="'project'"
+            :name="project.name"
+            :repo="project.repo"
+            :text="project.text"
+            :languages="project.language"
+            :link="project.link"
+          />
         </div>
       </section>
       <section class=" mt-3">
         <div class="hello-world pb-2">Blog Posts</div>
         <div class="pt-3 row">
-          
-        <postt
-          v-for="(project, index) in blog"
-          :key="index"
-          :type="'project'"
-          :name="project.name"
-          :blog="project.blog"
-          :text="project.text"
-          :languages="project.language"
-          :link="false"
-        />
+          <postt
+            v-for="(project, index) in blog"
+            :key="index"
+            :type="'project'"
+            :name="project.name"
+            :blog="project.blog"
+            :text="project.text"
+            :languages="project.language"
+            :link="false"
+          />
         </div>
       </section>
       <section class="mt-3">
@@ -144,11 +142,21 @@
           >.
         </div>
       </section>
-      <section>
+      <section class="mt-3">
         <div class="hello-world pb-2">Leisure time.</div>
         <div class="pt-3">
           When I am away from visual studio code, I try to hit the gym, watch
           movies, social media e.t.c.
+        </div>
+      </section>
+      <section class="mt-3">
+        <div class="hello-world pb-2">Music.</div>
+        <div class="pt-3">
+          Well, when it comes to music, I might be a psycho &#x1F92A;. On an
+          average, I listen to more than a 100 songs per week.
+          <br />
+          I do not have a preffered genre, any song that sounds good is great by
+          me.
         </div>
       </section>
     </div>
@@ -201,16 +209,15 @@ export default {
           text: `Gizmo is a real estate application where users purchase land, houses and properties with utmost security due to set protocols.`,
           type: "project",
           link: "https://gizmo-front-end.herokuapp.com/",
-          repo: "https://github.com/god-of-js/gizmo"
+          repo: "https://github.com/god-of-js/gizmo",
         },
         {
           name: "Gizmo(backend)",
-          language:
-            "Node, Express, twillio, Javascript",
+          language: "Node, Express, twillio, Javascript",
           text: `Gizmo is a real estate application where users purchase land, houses and properties with utmost security due to set protocols.`,
           type: "project",
           link: "https://gizmo-front-end.herokuapp.com/",
-          repo: "https://github.com/god-of-js/gizmobackend"
+          repo: "https://github.com/god-of-js/gizmobackend",
         },
       ],
       blog: [
