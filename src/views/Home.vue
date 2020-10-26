@@ -37,7 +37,7 @@
       <div class="pt-4">
         <div class="hello-world pb-2 text-center">Hello World! &#x1F604;</div>
         <p class="text text-center">
-          You've just come across a developer and tehnical writer &#x1F913;.
+          You've just come across a software engineer and tehnical writer &#x1F913;.
           <br />
 
           Find below few of my works, articles, and a little bit about me.
