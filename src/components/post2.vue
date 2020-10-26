@@ -2,12 +2,12 @@
   <div class="d-flex post__box border m-3 p-3 col-lg-5 col-md-6 col-sm-12">
     <div class="description">
       <div
-          :href="link"
-          target="_blank"
-          class="name font__color"
-          style="font-size: 1.2em;"
-        >
-          {{ name }}
+        :href="link"
+        target="_blank"
+        class="name font__color"
+        style="font-size: 1.2em;"
+      >
+        {{ name }}
       </div>
       <div class="languages pt-2 pl-0" style="font-size: 0.8em;">
         <a
@@ -18,7 +18,6 @@
           style="font-size: 0.9em;"
         >
           APPLICATION
-
         </a>
         <a
           :href="repo"
@@ -28,17 +27,15 @@
           style="font-size: 0.9em;"
         >
           GIT REPO
-
         </a>
         <a
-        v-if="blog"
+          v-if="blog"
           :href="blog"
           target="_blank"
           class="name font__color"
           style="font-size: 0.9em;"
         >
           BLOG POST
-
         </a>
       </div>
       <div class="languages mt-2" style="font-size: 0.8em;">
@@ -59,6 +56,6 @@ export default {
     link: [String, Boolean],
     blog: [String, Boolean],
     repo: [String, Boolean]
-  },
+  }
 };
 </script>

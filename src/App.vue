@@ -1,11 +1,22 @@
 <template>
-  <div id="app" :class="[dark === true ? 'dark__mode' : 'light__mode', ' body ']">
+  <div
+    id="app"
+    :class="[dark === true ? 'dark__mode' : 'light__mode', ' body ']"
+  >
     <side v-if="sidebar === true" />
     <div class="d-flex align-items-center pt-4">
-      <navbar class=""/>
+      <navbar class="" />
       <div class="ml-3">
-      <button class="mdi mdi-weather-night mode__btn active__bg" v-if="dark == false" @click="dark = true"> </button>
-      <button class="mdi mdi-weather-sunny mode__btn active__bg" v-else @click="dark = false"></button>
+        <button
+          class="mdi mdi-weather-night mode__btn active__bg"
+          v-if="dark == false"
+          @click="dark = true"
+        ></button>
+        <button
+          class="mdi mdi-weather-sunny mode__btn active__bg"
+          v-else
+          @click="dark = false"
+        ></button>
       </div>
     </div>
 
@@ -20,18 +31,18 @@ export default {
   data: () => {
     return {
       sidebar: false,
-      dark: false,
+      dark: false
     };
   },
   components: {
     navbar,
-    side,
+    side
   },
   mounted() {
-    EventBus.$on("sidebar", (value) => {
+    EventBus.$on("sidebar", value => {
       this.sidebar = value;
     });
-  },
+  }
 };
 </script>
 <style lang="scss">

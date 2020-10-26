@@ -1,8 +1,12 @@
 <template>
-  <nav class="d-flex p-2 align-items-center justify-content-between pl-5 col-lg-4">
+  <nav
+    class="d-flex p-2 align-items-center justify-content-between pl-5 col-lg-4"
+  >
     <b> Godofjs </b>
     <div class="  d-flex justify-content-between align-center">
-      <a href="mailto:henryeze019@gmail.com" class="link active__bg nav_links">Contact</a>
+      <a href="mailto:henryeze019@gmail.com" class="link active__bg nav_links"
+        >Contact</a
+      >
       <a
         class="link active__bg nav_links"
         target="_blank"
@@ -23,7 +27,7 @@ export default {
   methods: {
     activate() {
       EventBus.$emit("sidebar", true);
-    },
-  },
+    }
+  }
 };
 </script>
