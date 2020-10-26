@@ -3,7 +3,7 @@
     <section
       class="first-layer d-flex flex-column justify-content-center align-items-center"
     >
-      <div><img src="/img/dogme.jpg" /></div>
+      <div><img src="/img/nativeme.jpg" /></div>
       <div class="pt-4 d-flex align-items-center socials">
         <a href="https://twitter.com/godofjs" target="_blank"
           ><button class="mdi-twitter mdi trans_btn"></button>
