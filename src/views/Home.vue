@@ -159,6 +159,12 @@
           me.
         </div>
       </section>
+      <section class="mt-3">
+        <div class="hello-world pb-2">Interest.</div>
+        <div class="pt-3">
+          I have a ton of interests in so many fields some of which are Programming, Artificial intelligence, music, entertainment, humans psychology, dogs, entrepreneurship, books, art, African culture e.t.c.
+        </div>
+      </section>
     </div>
   </div>
 </template>
